@@ -29,7 +29,7 @@ public class ListController {
 		System.out.println(auth.getAuthorities()); // 가지고 있는 모든 롤을 출
 		boolean hasAdmin = false; // 셋팅값 기본
 		for (GrantedAuthority authority : auth.getAuthorities()) { 
-			hasAdmin = authority.getAuthority().equals("ROLE_ADMIN");
+			hasAdmin = authority.getAuthority().equals("ROLE_USER");
 			if(hasAdmin) {
 				break;
 			}
